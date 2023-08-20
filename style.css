@@ -1,0 +1,87 @@
+html,body {
+    margin:0;
+    padding:0;
+    background: black;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Hexaframe CF';
+    src: url('HexaframeCF-Bold.eot');
+    src: local('Hexaframe CF Bold'), local('HexaframeCF-Bold'),
+        url('fonts/HexaframeCF-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/HexaframeCF-Bold.woff2') format('woff2'),
+        url('fonts/HexaframeCF-Bold.woff') format('woff'),
+        url('fonts/HexaframeCF-Bold.ttf') format('truetype');
+    font-weight: italic;
+    font-style: normal;
+}
+
+#banner{
+    
+    background:linear-gradient(rgba(20, 20, 22, 0.5),rgba(0, 0, 1, 0.7)),url(Batman_Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.banner-text{
+    text-align: center;
+    padding-top: 170px;
+
+}
+.text {
+    font-family: 'Hexaframe CF';
+    font-size: 50px;
+    transform: translate(0%, -10%);
+    color: #00FFFF;
+}
+/* 
+.text span{
+    color:#ff3b3b;   
+} */
+.ip{
+    font-family: 'Hexaframe CF';
+    font-size: 70px;
+    transform: translate(0%,-40%); 
+    color: rgb(190, 12, 12);
+
+}
+nav.logo{
+    width: 50%;
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.name {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container p{
+    font-size: 20px;
+    padding-right: 390px;
+    letter-spacing: 2px;
+    color: rgb(57,255,20); 
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    filter: drop-shadow(0 0 20px rgb(57,255,20)) drop-shadow(0 0 60px rgb(57,255,20));
+    animation: textEffect 0.5s steps(1) infinite;
+}
+@keyframes textEffect{
+    0%,100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}

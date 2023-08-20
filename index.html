@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Justin's Apache</title>
+        <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+    </head> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <body>
+        <!-- <script src="particles.js"></script>
+        <script src="app.js"></script> -->
+
+        <section id = "banner">
+            <!-- <nav>
+                <img src="Batman_Banner.jpg" width="5%" height="5%" class="logo" >
+            </nav> -->
+            <div class = "banner-text">
+                <h1 class="text">Ju$Tin<span>'</span>s<span> Port<span>f</span>ol<span>i</span>o</h1>
+                <h2 class="ip">127.0.0.1</h2>
+            </div>
+            <script type="text/javascript">
+                const text = baffle(".text");
+                text.set({
+                    characters:'H?@AC"&_C#$K^[!E$R<$>^+*,',
+                    speed:150
+                });
+                text.start();
+                text.reveal(1000);
+            </script>
+
+-
+            <script type="text/javascript">
+                const text1 = baffle(".ip");
+                text1.set({
+                    characters:'▒█▒ >██▓▒ <░▓░▓ ▓▓▒ █▒▓▒░ █▒/▓ ▒/▓ ▒█░░ ██░▒',
+                    speed:150
+                });
+                text1.start();
+                text1.reveal(5000);
+            </script>
+        </section>
+    </body>
+</html>
